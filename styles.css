@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-desktop.png);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+}
+
+.text-info {
+    color: #fcffff;
+    align-self: center;
+}
+
+.text-info h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.form-area p {
+    text-align: center;
+    color: #d3d2e4;
+    background-color: #5d54a3;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: transparent;
+    width: 100%;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+    margin-top: 15px;
+    background-color: #fefffd;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.input-field input {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    border: 2px solid hsl(0, 100%, 74%);
+    outline: none;
+    border-radius: 4px;
+}
+
+.input-field button {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    color: rgb(245, 234, 234);
+    background-color: hsl(154, 59%, 51%);
+    font-weight: 700;
+}
+
+.down-text span {
+    color: hsl(246, 25%, 77%);
+}
+
+.form-field div span strong {
+    color: hsl(0, 100%, 74%);
+}
+
+@media (max-width: 840px) {
+    .container-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .text-info {
+        padding-left: 20px;
+    }
+
+    .form-area {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 840px) and (max-width: 1200px) {
+    .container {
+        padding: 20px;
+    }
+}
